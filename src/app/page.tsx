@@ -1,5 +1,7 @@
 "use client";
 
+import FooterDependent from "@/components/layout/footer/footer.dependent";
+import FooterLast from "@/components/layout/footer/footer.last";
 import HeaderMain from "@/components/layout/header/header.main";
 import HeaderSale from "@/components/layout/header/header.sale";
 import HomeBanner from "@/components/layout/home/home.banner";
@@ -16,13 +18,15 @@ export default function Home() {
       <HeaderMain />
       <HomeMenu />
       <HomeBody />
+      <FooterDependent />
+      <FooterLast />
     </div>
   );
 }
 
 const HomeBody = () => {
   return (
-    <div className="bg-homeBodyBg my-4">
+    <div className="bg-homeBodyBg mt-4">
       <div className="page-container py-6">
         <NavPage />
         <HomeBanner />
