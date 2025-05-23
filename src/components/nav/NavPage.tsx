@@ -1,0 +1,16 @@
+import React from "react";
+import ArrowRightIcon from "../icons/ArrowRightIcon";
+
+const NavPage = () => {
+  return (
+    <div className="flex items-center gap-4 mb-6">
+      <div className="flex items-center gap-4 text-[#919EAB]">
+        Trang chủ
+        <ArrowRightIcon></ArrowRightIcon>
+      </div>
+      <p className="font-bold text-[#024897] cursor-pointer">Sản phẩm</p>
+    </div>
+  );
+};
+
+export default NavPage;
