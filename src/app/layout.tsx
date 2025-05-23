@@ -3,10 +3,6 @@ import { Roboto_Mono } from "next/font/google";
 import "../styles/_reset-css.css";
 import "../styles/typing-theme.css";
 import "./globals.css";
-import { LayoutProvider } from "@/contexts/layoutStates";
-import { CreateBoardProvider } from "@/contexts/createBoardStates";
-import { NotifyProvider } from "@/contexts/notifyStates";
-import { TypingThemeProvider } from "@/contexts/typingThemeStates";
 import Providers from "./providers";
 
 const robotoMono = Roboto_Mono({
@@ -29,15 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={``}>
-        <Providers>
-          <CreateBoardProvider>
-            <NotifyProvider>
-              <TypingThemeProvider>
-                <LayoutProvider>{children}</LayoutProvider>
-              </TypingThemeProvider>
-            </NotifyProvider>
-          </CreateBoardProvider>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

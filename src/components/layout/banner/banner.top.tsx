@@ -26,11 +26,11 @@ const TagLocal = () => {
 };
 const ContentLocal = () => {
   return (
-    <div className="absolute top-1/4 left-10 flex flex-col gap-5">
-      <p className="text-stroke text-[80px] text-white font-bold uppercase">
+    <div className="absolute top-1/3 left-10 flex flex-col gap-5 z-10">
+      <p className="text-stroke text-[80px] text-white font-bold uppercase mb-10">
         tải app nhận quà
       </p>
-      <div className="flex flex-col gap-2 text-[32px] text-primaryYellow">
+      <div className="flex flex-col gap-6 text-[32px] text-primaryYellow">
         <p>
           Tích điểm ngay trên app <span className="font-bold">SUNFIL1</span>
         </p>

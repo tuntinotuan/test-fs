@@ -1,10 +1,10 @@
 import React from "react";
 import KeyboardArrowRightRoundedIcon from "@mui/icons-material/KeyboardArrowRightRounded";
 
-const ArrowRightIcon = ({ className, ...rest }: any) => {
+const ArrowRightIcon = ({ className, fontSize = "inherit", ...rest }: any) => {
   return (
-    <div className={`cursor-move ${className}`} {...rest}>
-      <KeyboardArrowRightRoundedIcon fontSize="inherit" />
+    <div className={`cursor-pointer ${className}`} {...rest}>
+      <KeyboardArrowRightRoundedIcon fontSize={fontSize} />
     </div>
   );
 };
