@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ArrowRightIcon from "../icons/ArrowRightIcon";
+import ArrowRightIcon from "../icons/arrow/ArrowRightIcon";
 
 type CategoryNavItemProps = {
   src: string;

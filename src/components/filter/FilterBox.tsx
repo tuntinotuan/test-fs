@@ -13,6 +13,7 @@ type FilterBoxProps = {
 
 const FilterBox = ({ type, show, title, list }: FilterBoxProps) => {
   const [showDropdown, setShowDropdown] = useState<boolean>(show);
+  const [currentBtnActive, setCurrentBtnActive] = useState("");
   return (
     <div className="p-3">
       <FilterTopBtn
@@ -35,7 +36,16 @@ const FilterBox = ({ type, show, title, list }: FilterBoxProps) => {
       {type === "button" && showDropdown && (
         <FilterDropdown>
           {list.map((item: any) => (
-            <FilterBtnItem key={item.title} title={item.name}></FilterBtnItem>
+            <FilterBtnItem
+              currentTitleActive={currentBtnActive}
+              key={item.name}
+              title={item.name}
+              onClick={() =>
+                setCurrentBtnActive(
+                  item.name === currentBtnActive ? "" : item.name
+                )
+              }
+            ></FilterBtnItem>
           ))}
         </FilterDropdown>
       )}

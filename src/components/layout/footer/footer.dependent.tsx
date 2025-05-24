@@ -1,4 +1,4 @@
-import ArrowForwardIcon from "@/components/icons/ArrowForwardIcon";
+import ArrowForwardIcon from "@/components/icons/arrow/ArrowForwardIcon";
 import MapIcon from "@/components/icons/MapIcon";
 import React from "react";
 

@@ -5,7 +5,10 @@ const HomePageList = () => {
   return (
     <div className="flex items-center gap-5">
       {pageLists.map((item) => (
-        <p key={item} className="font-medium cursor-pointer transition-all">
+        <p
+          key={item}
+          className="font-medium hover:text-blue600 cursor-pointer transition-all"
+        >
           {item}
         </p>
       ))}

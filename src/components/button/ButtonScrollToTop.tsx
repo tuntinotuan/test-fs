@@ -1,27 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
-import ArrowUpIcon from "../icons/ArrowUpIcon";
+import React from "react";
+import ArrowUpIcon from "../icons/arrow/ArrowUpIcon";
+import { useScrollDirection } from "@/hooks/useScrollDirection";
 
 const ButtonScrollToTop = () => {
-  const [direction, setDirection] = useState<"up" | "down" | null>(null);
-  const lastScrollY = useRef(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollY = window.scrollY;
-
-      if (currentScrollY > lastScrollY.current) {
-        setDirection("down");
-      } else if (currentScrollY < lastScrollY.current) {
-        setDirection("up");
-      }
-
-      lastScrollY.current = currentScrollY;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
+  const direction = useScrollDirection();
   return (
     <div
       className={`group fixed bottom-[10%] right-[2%] flex items-center justify-center w-10 h-10 rounded-full text-blue800 border-1 border-blue800 hover:bg-white hover:shadow-md z-20 cursor-pointer transition-all ${

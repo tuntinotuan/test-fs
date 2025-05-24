@@ -1,6 +1,6 @@
 import React from "react";
-import ArrowUpIcon from "../icons/ArrowUpIcon";
-import ArrowDownIcon from "../icons/ArrowDownIcon";
+import ArrowUpIcon from "../icons/arrow/ArrowUpIcon";
+import ArrowDownIcon from "../icons/arrow/ArrowDownIcon";
 
 type FilterTopBtnProps = {
   onClick: () => void;

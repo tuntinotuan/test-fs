@@ -1,9 +1,9 @@
 import ButtonFooter from "@/components/button/ButtonFooter";
 import ButtonScrollToTop from "@/components/button/ButtonScrollToTop";
 import FooterListText from "@/components/footer/FooterListText";
-import AppleStoreIcon from "@/components/icons/AppleStoreIcon";
-import ArrowDownIcon from "@/components/icons/ArrowDownIcon";
-import GooglePlayStoreIcon from "@/components/icons/GooglePlayStoreIcon";
+import AppleStoreIcon from "@/components/icons/store/AppleStoreIcon";
+import ArrowDownIcon from "@/components/icons/arrow/ArrowDownIcon";
+import GooglePlayStoreIcon from "@/components/icons/store/GooglePlayStoreIcon";
 import VietnamIcon from "@/components/icons/VietnamIcon";
 import Image from "next/image";
 import React from "react";
@@ -77,7 +77,7 @@ const FooterLast = () => {
     },
   ];
   return (
-    <footer>
+    <footer className="relative overflow-hidden">
       <div className="page-container flex items-start justify-between flex-wrap gap-3 py-24">
         {footerList.map((i) => (
           <div key={i.title} className="">
@@ -123,6 +123,14 @@ const FooterLast = () => {
             <ArrowDownIcon />
           </div>
         </div>
+        <Image
+          src={"/footer-image.jpg"}
+          alt=""
+          width={1920}
+          height={463.6666564941406}
+          className="absolute top-0 -z-10 opacity-35"
+          unoptimized
+        ></Image>
       </div>
       <ButtonScrollToTop />
     </footer>

@@ -40,19 +40,15 @@ const ProductLeft = () => {
     btnList: [
       {
         name: "Dưới 100,000 đ",
-        pick: false,
       },
       {
         name: "100,000 đ - 300,000 đ",
-        pick: false,
       },
       {
         name: "300,000 đ - 500,000 đ",
-        pick: false,
       },
       {
         name: "Trên 500,000 đ",
-        pick: false,
       },
     ],
   };

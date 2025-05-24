@@ -5,8 +5,8 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import ProductCard from "../product/ProductCard";
-import ArrowLeftIcon from "../icons/ArrowLeftIcon";
-import ArrowRightIcon from "../icons/ArrowRightIcon";
+import ArrowLeftIcon from "../icons/arrow/ArrowLeftIcon";
+import ArrowRightIcon from "../icons/arrow/ArrowRightIcon";
 import { slideProductLists } from "@/api/mock.api";
 
 const SlideProduct = () => {

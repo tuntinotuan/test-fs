@@ -1,5 +1,5 @@
 import { categoryProductList } from "@/api/mock.api";
-import ArrowRightIcon from "@/components/icons/ArrowRightIcon";
+import ArrowRightIcon from "@/components/icons/arrow/ArrowRightIcon";
 import ProductCard from "@/components/product/ProductCard";
 import React from "react";
 
