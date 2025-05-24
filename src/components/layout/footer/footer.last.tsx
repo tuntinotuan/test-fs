@@ -85,7 +85,7 @@ const FooterLast = () => {
             {i.list.map((j, index) => (
               <p
                 key={index}
-                className="text-xl text-[#637381] mb-2 cursor-pointer"
+                className="text-xl text-textSecondary mb-2 cursor-pointer"
               >
                 {j.textNormal}
                 <span className="font-bold ml-1">{j.textBold}</span>
@@ -109,13 +109,13 @@ const FooterLast = () => {
             smallText="Get It On"
             largerText="Google Play Store"
             icon={<GooglePlayStoreIcon />}
-            className="bg-[#1C252E]"
+            className="bg-textPrimary"
           ></ButtonFooter>
           <ButtonFooter
             smallText="Download from"
             largerText="Apple App Store"
             icon={<AppleStoreIcon />}
-            className="bg-[#0373F3]"
+            className="bg-blue500"
           ></ButtonFooter>
           <div className="flex items-center gap-2 w-max ml-auto">
             <VietnamIcon />

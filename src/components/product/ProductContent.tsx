@@ -15,7 +15,7 @@ const ProductContent = ({ hiddenBtnBuy }: any) => {
         <p className="text-[#B71D18]">-10%</p>
       </div>
       {!hiddenBtnBuy && (
-        <Button className="!text-[#025FCA] !bg-[#E6F1FF]">Mua ngay</Button>
+        <Button className="!text-blue600 !bg-blue50">Mua ngay</Button>
       )}
     </div>
   );

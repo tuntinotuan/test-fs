@@ -19,7 +19,7 @@ const BannerTop = () => {
 
 const TagLocal = () => {
   return (
-    <div className="absolute top-10 left-0 bg-gradient-to-br from-[#FFF5CC] to-[#FFD666] text-[#7A0916] font-bold text-2xl uppercase rounded-tr-full rounded-br-full py-[10px] px-12">
+    <div className="absolute top-10 left-0 bg-gradient-to-br from-warningLighter to-warningLight text-errDarker font-bold text-2xl uppercase rounded-tr-full rounded-br-full py-[10px] px-12">
       mới cực hot!
     </div>
   );

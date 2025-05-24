@@ -131,7 +131,7 @@ const ProductLeft = () => {
       <div className="bg-white rounded-lg">
         <div className="flex items-center gap-3 border border-transparent border-b-gray-200 p-3">
           <FilterIcon></FilterIcon>
-          <p className="text-2xl text-[#0373F3] font-bold">Bộ lọc</p>
+          <p className="text-2xl text-blue500 font-bold">Bộ lọc</p>
         </div>
         <FilterBox
           type="checked"

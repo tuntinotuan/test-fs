@@ -8,7 +8,7 @@ const CategoryProductList = () => {
     <>
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold">Sản phẩm bán chạy</h2>
-        <div className="flex items-center gap-2 text-base text-[#0373F3] cursor-pointer">
+        <div className="flex items-center gap-2 text-base text-blue500 cursor-pointer">
           Xem tất cả
           <ArrowRightIcon />
         </div>

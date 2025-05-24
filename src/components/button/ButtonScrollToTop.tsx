@@ -24,7 +24,7 @@ const ButtonScrollToTop = () => {
 
   return (
     <div
-      className={`group fixed bottom-[10%] right-[2%] flex items-center justify-center w-10 h-10 rounded-full text-[#013065] border-1 border-[#013065] hover:bg-white hover:shadow-md z-20 cursor-pointer transition-all ${
+      className={`group fixed bottom-[10%] right-[2%] flex items-center justify-center w-10 h-10 rounded-full text-blue800 border-1 border-blue800 hover:bg-white hover:shadow-md z-20 cursor-pointer transition-all ${
         direction === "down" ? "opacity-100" : "opacity-0"
       }`}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

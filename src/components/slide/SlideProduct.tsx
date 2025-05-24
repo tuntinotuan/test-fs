@@ -43,13 +43,13 @@ const SlideProduct = () => {
       {/* Custom buttons */}
       <button
         ref={prevRef}
-        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 flex items-center justify-center bg-[#CDE4FE] rounded-full cursor-pointer z-10"
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 flex items-center justify-center bg-blue100 rounded-full cursor-pointer z-10"
       >
         <ArrowLeftIcon fontSize="medium"></ArrowLeftIcon>
       </button>
       <button
         ref={nextRef}
-        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-10 h-10 flex items-center justify-center bg-[#CDE4FE] rounded-full cursor-pointer z-10"
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-10 h-10 flex items-center justify-center bg-blue100 rounded-full cursor-pointer z-10"
       >
         <ArrowRightIcon fontSize="medium"></ArrowRightIcon>
       </button>

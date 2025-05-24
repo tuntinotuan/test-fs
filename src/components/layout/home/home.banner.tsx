@@ -4,7 +4,7 @@ import BannerBottom from "../banner/banner.bottom";
 
 const HomeBanner = () => {
   return (
-    <div className="bg-[#025FCA] rounded-xl overflow-hidden">
+    <div className="bg-blue600 rounded-xl overflow-hidden">
       <BannerTop />
       <BannerBottom />
     </div>

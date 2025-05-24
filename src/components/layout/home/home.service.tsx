@@ -37,7 +37,7 @@ const HomeService = () => {
           <div className="shrink-0">{item.icon}</div>
           <div className="flex flex-col gap-2">
             <p className="font-bold text-base">{item.title}</p>
-            <p className="text-[#637381]">{item.content}</p>
+            <p className="text-textSecondary">{item.content}</p>
           </div>
         </div>
       ))}

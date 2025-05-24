@@ -3,9 +3,9 @@ import FireIcon from "../icons/FireIcon";
 
 const ProductSaleTag = () => {
   return (
-    <div className="w-[128px] flex items-center gap-2 bg-gradient-to-br from-[#FFD666] to-[#FFAB00] rounded-full p-2">
+    <div className="w-[128px] flex items-center gap-2 bg-gradient-to-br from-warningLight to-warningMain rounded-full p-2">
       <FireIcon />
-      <p className="font-semibold text-[#7A0916]">Giá cực sốc</p>
+      <p className="font-semibold text-errDarker">Giá cực sốc</p>
     </div>
   );
 };

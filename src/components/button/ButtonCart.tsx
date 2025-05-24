@@ -49,10 +49,10 @@ const ButtonCart = () => {
   return (
     <>
       <div ref={hoverRef}>
-        <Button className="hover:bg-[#E6F1FF]">
+        <Button className="hover:bg-blue50">
           <div className="relative">
             <CartIcon />
-            <div className="absolute -top-1/2 -right-1/2 w-6 h-6 flex items-center justify-center  rounded-full bg-[#FF5630] text-white ">
+            <div className="absolute -top-1/2 -right-1/2 w-6 h-6 flex items-center justify-center  rounded-full bg-errMain text-white ">
               12
             </div>
           </div>

@@ -8,7 +8,7 @@ const NavPage = () => {
         Trang chủ
         <ArrowRightIcon></ArrowRightIcon>
       </div>
-      <p className="font-bold text-[#024897] cursor-pointer">Sản phẩm</p>
+      <p className="font-bold text-blue700 cursor-pointer">Sản phẩm</p>
     </div>
   );
 };

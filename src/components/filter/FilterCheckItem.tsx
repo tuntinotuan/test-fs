@@ -20,13 +20,13 @@ const FilterCheckItem = ({
       <label className="flex items-center gap-2">
         <input
           type="checkbox"
-          className="w-5 h-5 accent-[#025FCA]"
+          className="w-5 h-5 accent-blue600"
           checked={currentChecked}
           onChange={handleOnChange}
         />
       </label>
       <p className="font-medium">{title}</p>
-      <span className="text-[#637381]">({quantity})</span>
+      <span className="text-textSecondary">({quantity})</span>
     </div>
   );
 };

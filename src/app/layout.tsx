@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={``}>
+      <body className={`text-textPrimary`}>
         <Providers>{children}</Providers>
       </body>
     </html>

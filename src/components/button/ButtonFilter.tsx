@@ -17,14 +17,14 @@ const ButtonFilter = ({
     <div
       className={`relative bg-white rounded-lg border py-2 px-4 cursor-pointer overflow-hidden transition-all ${
         active
-          ? "border-[#0373F3] text-[#0373F3] cursor-wait"
+          ? "border-blue500 text-blue500 cursor-wait"
           : "border-transparent"
       }`}
       onClick={active ? () => {} : onClick}
     >
       <p className="font-semibold">{children}</p>
       <div
-        className={`absolute -top-[12%] -right-[14%] w-10 h-4 bg-[#0373F3] rotate-45 transition-all ${
+        className={`absolute -top-[12%] -right-[14%] w-10 h-4 bg-blue500 rotate-45 transition-all ${
           active ? "opacity-100" : "opacity-0"
         }`}
       ></div>
