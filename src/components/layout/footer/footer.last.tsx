@@ -85,9 +85,9 @@ const FooterLast = () => {
             {i.list.map((j, index) => (
               <p
                 key={index}
-                className="text-xl text-textSecondary mb-2 cursor-pointer"
+                className="flex items-center gap-1 text-xl text-textSecondary mb-2 cursor-pointer hover:text-blue600 transition-all"
               >
-                {j.textNormal}
+                <p className="">{j.textNormal}</p>
                 <span className="font-bold ml-1">{j.textBold}</span>
               </p>
             ))}
