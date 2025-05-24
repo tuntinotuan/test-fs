@@ -7,37 +7,34 @@ import "swiper/css/pagination";
 import ProductCard from "../product/ProductCard";
 import ArrowLeftIcon from "../icons/ArrowLeftIcon";
 import ArrowRightIcon from "../icons/ArrowRightIcon";
+import { slideProductLists } from "@/api/mock.api";
 
 const SlideProduct = () => {
   const prevRef = useRef<HTMLButtonElement | null>(null);
   const nextRef = useRef<HTMLButtonElement | null>(null);
-  const productLists = [
-    { image: "/product-image-1.png" },
-    { image: "/product-image-2.png" },
-    { image: "/product-image-3.png" },
-    { image: "/product-image-4.png" },
-    { image: "/product-image-5.png" },
-    { image: "/product-image-1.png" },
-    { image: "/product-image-2.png" },
-    { image: "/product-image-3.png" },
-    { image: "/product-image-4.png" },
-    { image: "/product-image-5.png" },
-  ];
+
   return (
     <div className="relative">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
-        slidesPerView={5}
+        // slidesPerView={5}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,
+        }}
+        breakpoints={{
+          320: { slidesPerView: 1 },
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 3 },
+          1280: { slidesPerView: 4 },
+          1440: { slidesPerView: 5 },
         }}
         pagination={{ clickable: true }}
         autoplay={{ delay: 3000 }}
         loop
       >
-        {productLists.map((item, index) => (
+        {slideProductLists.map((item, index) => (
           <SwiperSlide key={index}>
             <ProductCard imageSrc={item.image}></ProductCard>
           </SwiperSlide>

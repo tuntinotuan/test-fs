@@ -9,7 +9,7 @@ const ProductMenuFilter = () => {
   return (
     <div className="flex items-center justify-between flex-wrap">
       <p className="text-xl font-semibold">Danh sách sản phẩm</p>
-      <div className="flex items-center gap-3">
+      <div className="flex items-center flex-wrap gap-3">
         <p className="mr-3">Sắp xếp theo</p>
         {btnList.map((item) => (
           <ButtonFilter

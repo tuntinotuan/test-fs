@@ -4,13 +4,22 @@ import ProductContent from "./ProductContent";
 
 type ProductCardProps = {
   imageSrc: string;
+  cardWidth?: number;
+  hiddenBtnBuy?: boolean;
 };
 
-const ProductCard = ({ imageSrc }: ProductCardProps) => {
+const ProductCard = ({
+  imageSrc,
+  cardWidth,
+  hiddenBtnBuy = false,
+}: ProductCardProps) => {
   return (
-    <div className="w-[252px] flex flex-col gap-2 bg-white rounded-lg overflow-hidden">
+    <div
+      className="w-[252px] flex flex-col gap-2 bg-white rounded-lg overflow-hidden"
+      style={{ width: cardWidth }}
+    >
       <ProductImage src={imageSrc} alt="product-image-1" />
-      <ProductContent />
+      <ProductContent hiddenBtnBuy={hiddenBtnBuy} />
     </div>
   );
 };

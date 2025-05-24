@@ -5,10 +5,12 @@ import { useHover } from "usehooks-ts";
 const Dropdown = ({
   children,
   className,
+  activeClassName,
   name,
 }: {
   children: React.ReactNode;
   className?: string;
+  activeClassName?: string;
   name: string;
 }) => {
   const hoverRef = useRef<HTMLDivElement>(null);
@@ -24,7 +26,9 @@ const Dropdown = ({
     <>
       <div
         ref={hoverRef}
-        className={`flex items-center gap-2 bg-[#0155C6] text-white rounded-lg p-[15px] cursor-pointer transition-all ${className}`}
+        className={`flex items-center gap-2 bg-[#0155C6] text-white rounded-lg p-[15px] cursor-pointer transition-all ${className} ${
+          isHovered ? `${activeClassName} rounded-br-none rounded-bl-none` : ""
+        }`}
       >
         <MenuRoundedIcon></MenuRoundedIcon>
         {name}
@@ -32,11 +36,11 @@ const Dropdown = ({
           className={`transition-all ${isHovered ? "-rotate-180" : ""}`}
           fontSize="small"
         ></ArrowDownIcon>
-        {isHovered && (
-          <DropdownShowContent rect={rect} isHovered={isHovered}>
-            {children}
-          </DropdownShowContent>
-        )}
+        {/* {isHovered && ( */}
+        <DropdownShowContent rect={rect} isHovered={isHovered}>
+          {children}
+        </DropdownShowContent>
+        {/* )} */}
       </div>
     </>
   );
@@ -71,7 +75,12 @@ const DropdownShowContent = ({
     setTooltipStyle(style);
   }, [rect, isHovered]);
   return (
-    <div className="absolute z-50 transition-all" style={{ ...tooltipStyle }}>
+    <div
+      className={`absolute z-50 transition-all ${
+        isHovered ? "opacity-100 visible" : "opacity-0 invisible"
+      }`}
+      style={{ ...tooltipStyle }}
+    >
       {children}
     </div>
   );

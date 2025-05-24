@@ -7,6 +7,7 @@ import HeaderSale from "@/components/layout/header/header.sale";
 import HomeBanner from "@/components/layout/home/home.banner";
 import HomeMenu from "@/components/layout/home/home.menu";
 import HomeProduct from "@/components/layout/home/home.product";
+import HomeService from "@/components/layout/home/home.service";
 import NavPage from "@/components/nav/NavPage";
 
 export const dynamic = "force-dynamic";
@@ -31,6 +32,7 @@ const HomeBody = () => {
         <NavPage />
         <HomeBanner />
         <HomeProduct />
+        <HomeService />
       </div>
     </div>
   );

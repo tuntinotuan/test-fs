@@ -10,7 +10,7 @@ const FooterDependent = () => {
           <MapIcon />
           <p className="text-3xl">Xem hệ thống 88 cửa hàng trên toàn quốc</p>
         </div>
-        <button className="flex items-center gap-3 text-[#025FCA] bg-white rounded-full py-4 px-6">
+        <button className="flex items-center gap-3 text-[#025FCA] bg-white rounded-full py-4 px-6 hover:brightness-95 transition-all">
           <p className="text-2xl">Xem ngay</p>
           <ArrowForwardIcon></ArrowForwardIcon>
         </button>

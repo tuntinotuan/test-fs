@@ -127,32 +127,34 @@ const ProductLeft = () => {
     },
   ];
   return (
-    <div className="w-[315px] flex flex-col bg-white rounded-lg">
-      <div className="flex items-center gap-3 border border-transparent border-b-gray-200 p-3">
-        <FilterIcon></FilterIcon>
-        <p className="text-2xl text-[#0373F3] font-bold">Bộ lọc</p>
-      </div>
-      <FilterBox
-        type="checked"
-        show={filterProduct.show}
-        title={filterProduct.title}
-        list={filterProduct.checkList}
-      ></FilterBox>
-      <FilterBox
-        type="button"
-        show={filterPrice.show}
-        title={filterPrice.title}
-        list={filterPrice.btnList}
-      ></FilterBox>
-      {filterRest.map((item) => (
+    <div className="w-[315px] flex flex-col h-auto">
+      <div className="bg-white rounded-lg">
+        <div className="flex items-center gap-3 border border-transparent border-b-gray-200 p-3">
+          <FilterIcon></FilterIcon>
+          <p className="text-2xl text-[#0373F3] font-bold">Bộ lọc</p>
+        </div>
         <FilterBox
-          key={item.title}
           type="checked"
-          show={item.show}
-          title={item.title}
-          list={item.checkList}
+          show={filterProduct.show}
+          title={filterProduct.title}
+          list={filterProduct.checkList}
         ></FilterBox>
-      ))}
+        <FilterBox
+          type="button"
+          show={filterPrice.show}
+          title={filterPrice.title}
+          list={filterPrice.btnList}
+        ></FilterBox>
+        {filterRest.map((item) => (
+          <FilterBox
+            key={item.title}
+            type="checked"
+            show={item.show}
+            title={item.title}
+            list={item.checkList}
+          ></FilterBox>
+        ))}
+      </div>
     </div>
   );
 };
