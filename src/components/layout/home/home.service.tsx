@@ -32,7 +32,7 @@ const HomeService = () => {
       {serviceList.map((item) => (
         <div
           key={item.title}
-          className="!w-[332px] h-[101px] flex items-center gap-4 bg-white rounded-xl shadow-md px-3 py-6"
+          className="!w-[320px] h-[101px] flex items-center gap-4 bg-white rounded-xl shadow-md px-3 py-6"
         >
           <div className="shrink-0">{item.icon}</div>
           <div className="flex flex-col gap-2">
