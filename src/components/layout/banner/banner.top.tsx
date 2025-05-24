@@ -48,6 +48,7 @@ const ImageLocal = () => {
         width={911.1438361139129}
         height={515.632676989493}
         className="absolute -bottom-[5%] -right-[10%] -rotate-[10deg] scale-90 z-0"
+        unoptimized
       ></Image>
       <Image
         src={"/banner-engine.png"}
@@ -55,6 +56,7 @@ const ImageLocal = () => {
         width={577.7699584960938}
         height={456.1413879394531}
         className="absolute bottom-0 right-[5%] z-10"
+        unoptimized
       ></Image>
     </>
   );

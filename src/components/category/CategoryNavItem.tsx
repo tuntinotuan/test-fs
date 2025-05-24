@@ -26,7 +26,7 @@ const CategoryNavItem = ({
       onMouseEnter={onMouseEnter}
     >
       <div className="flex items-center gap-2">
-        <Image src={src} alt={alt} width={40} height={40}></Image>
+        <Image src={src} alt={alt} width={40} height={40} unoptimized></Image>
         <p>{title}</p>
       </div>
       <ArrowRightIcon></ArrowRightIcon>

@@ -17,6 +17,7 @@ const CartItem = ({ src, alt, title, price }: CartItemProps) => {
         className="rounded"
         width={60}
         height={60}
+        unoptimized
       ></Image>
       <div className="flex flex-col gap-2">
         <p className="truncate max-w-[200px]">{title}</p>

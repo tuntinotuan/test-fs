@@ -98,6 +98,7 @@ const FooterLast = () => {
                 width={200}
                 height={75.66666412353516}
                 className="mt-8"
+                unoptimized
               ></Image>
             )}
           </div>
