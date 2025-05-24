@@ -1,7 +1,7 @@
 # Run NextJS Project
 
 ```bash
-cd .\test-xhr\
+cd .\test-fs\
 # then
 npm install
 # last
@@ -11,10 +11,6 @@ npm run dev
 ## 🚀 Demo
 
 [Live Demo](https://flexibletodoapp.netlify.app/)
-
-## Screenshort of running results
-
-![App Screenshot](./screenshot-running-results.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

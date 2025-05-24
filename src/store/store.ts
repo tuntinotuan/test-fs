@@ -11,11 +11,9 @@ import {
 } from "redux-persist";
 import storage from "redux-persist/lib/storage"; // defaults to localStorage
 import counterReducer from "./slices/counterSlice";
-import boardReducer from "./slices/boardSlice";
 
 const rootReducer = combineReducers({
   counter: counterReducer,
-  board: boardReducer,
 });
 
 const persistConfig = {

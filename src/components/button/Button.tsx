@@ -1,5 +1,4 @@
 "use client";
-import { useNotify } from "@/contexts/notifyStates";
 import Link from "next/link";
 
 type ButtonProps = {
@@ -13,7 +12,6 @@ type ButtonProps = {
 
 const Button = (props: ButtonProps) => {
   const { hover = "hover:bg-f2Color" } = props;
-  const { setTitle, setActiveNormal } = useNotify();
   const Main = () => {
     return (
       <button
@@ -21,14 +19,7 @@ const Button = (props: ButtonProps) => {
           props.disable ? "!cursor-wait brightness-90" : ""
         }
           ${props.className}`}
-        onClick={
-          !props.disable
-            ? props.onClick
-            : () => {
-                setTitle("Unfortunately, this feature is under development"),
-                  setActiveNormal(true);
-              }
-        }
+        onClick={!props.disable ? props.onClick : () => {}}
       >
         {props.children}
       </button>
