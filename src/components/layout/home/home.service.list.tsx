@@ -26,7 +26,10 @@ const HomeServiceList = () => {
   return (
     <div className="flex items-center gap-5">
       {serviceLists.map((item) => (
-        <div key={item.title} className="flex items-center gap-2">
+        <div
+          key={item.title}
+          className="max-13in:text-sm flex items-center gap-2"
+        >
           {item.icon}
           {item.title}
         </div>

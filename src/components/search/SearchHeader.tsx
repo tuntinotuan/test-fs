@@ -4,7 +4,7 @@ import SearchIcon from "../icons/SearchIcon";
 
 const SearchHeader = () => {
   return (
-    <div className="flex items-center justify-between gap-2 w-[739px] border-2 border-blue500 rounded-full p-2">
+    <div className="max-13in:w-[550px] max-lg:w-[320px] flex items-center justify-between gap-2 w-[739px] border-2 border-blue500 rounded-full p-2">
       <input
         type="search"
         className={`flex-1 ml-3`}

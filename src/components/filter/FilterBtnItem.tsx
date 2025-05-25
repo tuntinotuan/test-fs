@@ -15,8 +15,8 @@ const FilterBtnItem = ({
   const active = title === currentTitleActive;
   return (
     <div
-      className={`flex items-center justify-center border border-gray-200 rounded py-2 transition-all cursor-pointer ${
-        active ? "text-blue600 border-blue600" : ""
+      className={`flex items-center justify-center border rounded py-2 transition-all cursor-pointer ${
+        active ? "text-blue600 border-blue600" : "border-gray-200"
       }`}
       onClick={onClick}
     >

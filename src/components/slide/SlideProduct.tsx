@@ -14,11 +14,12 @@ const SlideProduct = () => {
   const nextRef = useRef<HTMLButtonElement | null>(null);
 
   return (
-    <div className="relative">
+    <div className="relative flex items-center justify-center">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={20}
         // slidesPerView={5}
+        // centeredSlides={true}
         navigation={{
           prevEl: prevRef.current,
           nextEl: nextRef.current,

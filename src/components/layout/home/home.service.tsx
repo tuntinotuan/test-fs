@@ -28,7 +28,7 @@ const HomeService = () => {
     },
   ];
   return (
-    <div className="page-container flex items-center flex-wrap gap-8 mt-[72px]">
+    <div className="page-container max-13in:justify-around flex items-center flex-wrap gap-8 mt-[72px]">
       {serviceList.map((item) => (
         <div
           key={item.title}
