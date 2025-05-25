@@ -26,10 +26,14 @@ export default function Home() {
 }
 
 const HomeBody = () => {
+  const listNav = [
+    { text: "Trang chủ", href: "/" },
+    { text: "Sản phẩm", active: true },
+  ];
   return (
     <div className="bg-homeBodyBg mt-4">
       <div className="page-container py-6">
-        <NavPage />
+        <NavPage listPage={listNav} />
         <HomeBanner />
         <HomeProduct />
         <HomeService />

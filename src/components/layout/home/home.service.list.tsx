@@ -1,8 +1,8 @@
 import React from "react";
-import LockIcon from "../../icons/LockIcon";
-import FreeShipIcon from "../../icons/FreeShipIcon";
-import TruckIcon from "../../icons/TruckIcon";
-import ReturnIcon from "../../icons/ReturnIcon";
+import LockIcon from "../../icons/service/LockIcon";
+import FreeShipIcon from "../../icons/service/FreeShipIcon";
+import TruckIcon from "../../icons/service/TruckIcon";
+import ReturnIcon from "../../icons/service/ReturnIcon";
 
 const HomeServiceList = () => {
   const serviceLists = [

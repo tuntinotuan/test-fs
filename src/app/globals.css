@@ -43,29 +43,6 @@ body {
   }
 }
 
-.home-menu-ul {
-  border-right: 1px solid #d7d7ea;
-}
-.text-signature {
-  font-family: "NVN Motherland Signature";
-  font-weight: 200;
-}
-
-/*  */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.flex-item {
-  width: auto;
-  background: lightgray;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .page-container {
   max-width: 1464px;
   margin-left: auto;

@@ -28,7 +28,7 @@ const ProductMenuFilter = () => {
                 key={item}
                 className={`p-3 transition-all ${
                   item === priceSort
-                    ? "cursor-wait text-gray-200"
+                    ? "cursor-wait text-gray-300"
                     : "hover:bg-gray-200"
                 }`}
                 onClick={() => setPriceSort(item)}
