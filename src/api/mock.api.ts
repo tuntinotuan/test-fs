@@ -8,7 +8,6 @@ export const slideProductLists = [
   { image: "/product-image-2.png" },
   { image: "/product-image-3.png" },
   { image: "/product-image-4.png" },
-  { image: "/product-image-5.png" },
 ];
 
 export const productList = [

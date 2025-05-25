@@ -49,7 +49,7 @@ const ButtonCart = () => {
   return (
     <>
       <div ref={hoverRef}>
-        <Button className="hover:bg-blue50 !rounded-full">
+        <Button className={`${isHovered ? "bg-blue50" : ""} !rounded-full`}>
           <div className="relative">
             <CartIcon />
             <div className="absolute -top-1/2 -right-1/2 w-6 h-6 flex items-center justify-center  rounded-full bg-errMain text-white ">
