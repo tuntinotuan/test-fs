@@ -9,7 +9,7 @@ const ProductCardList = () => {
   const [hasMore, setHasMore] = useState(true);
 
   const fetchMoreData = () => {
-    if (items.length >= 18) {
+    if (items.length >= 27) {
       setHasMore(false);
       return;
     }

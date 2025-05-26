@@ -13,12 +13,12 @@ const CategoryProductList = () => {
           <ArrowRightIcon />
         </div>
       </div>
-      <div className="flex items-center flex-wrap gap-3 mt-6">
+      <div className="flex items-center justify-around flex-wrap gap-2 mt-6">
         {categoryProductList.map((item) => (
           <ProductCard
             imageSrc={item.image}
             key={item.image}
-            cardWidth={200}
+            cardWidth={195}
             hiddenBtnBuy
           ></ProductCard>
         ))}

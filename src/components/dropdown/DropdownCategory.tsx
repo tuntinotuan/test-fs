@@ -49,8 +49,8 @@ const DropdownCategory = () => {
     navList[0].title
   );
   return (
-    <div className="flex items-start justify-start bg-gray-300 bg-opacity-60 overflow-hidden rounded-bl-xl rounded-br-xl">
-      <div className="max-13in:w-[1300px] w-[1375.70263671875px] min-h-[714px] flex bg-[#F4F6F8] text-black rounded shadow-xl border border-gray-50 rounded-bl-xl rounded-br-xl cursor-default overflow-hidden">
+    <div className="flex items-start justify-start bg-gray-300 bg-opacity-60 overflow-hidden rounded-bl-xl shadow-xl rounded-br-xl">
+      <div className="max-13in:w-[1335px] w-[1375.70263671875px] min-h-[714px] flex bg-[#F4F6F8] text-black rounded shadow-xl border border-gray-50 rounded-bl-xl rounded-br-xl cursor-default overflow-hidden">
         <CategorySidebar
           currentNavActive={currentNavActive}
           setCurrentNavActive={setCurrentNavActive}
