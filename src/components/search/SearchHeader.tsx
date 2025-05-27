@@ -4,9 +4,13 @@ import SearchIcon from "../icons/SearchIcon";
 
 const SearchHeader = () => {
   return (
-    <div className="max-13in:w-[550px] max-lg:w-[320px] flex items-center justify-between gap-2 w-[739px] border-2 border-blue500 rounded-full p-2">
+    <label
+      htmlFor="search-header"
+      className="max-13in:w-[550px] max-lg:w-[320px] flex items-center justify-between gap-2 w-[739px] border-2 border-blue500 rounded-full p-2 cursor-pointer"
+    >
       <input
         type="search"
+        id="search-header"
         className={`flex-1 ml-3`}
         placeholder="Tìm sản phẩm"
       />
@@ -16,7 +20,7 @@ const SearchHeader = () => {
           <SearchIcon />
         </div>
       </div>
-    </div>
+    </label>
   );
 };
 
